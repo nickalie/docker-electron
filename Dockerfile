@@ -16,7 +16,6 @@ RUN dpkg --add-architecture i386 && \
     apt-get install -y nodejs winehq-stable google-cloud-sdk yarn --no-install-recommends && \
     apt-get clean
 
-ENV WINEARCH win32
 ENV WINEPREFIX /wine32
 RUN wineboot && \
     wineboot -s && \
