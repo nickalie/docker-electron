@@ -1,1 +1,1 @@
-# docker-electron
+Docker image contains everything required for building electron applications
