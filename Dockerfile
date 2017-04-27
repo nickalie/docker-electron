@@ -2,7 +2,7 @@ FROM ubuntu
 MAINTAINER Nikolay Glushchenko <nick@nickalie.com>
 RUN dpkg --add-architecture i386 && \
     apt-get update -y && \
-    apt-get install -y software-properties-common wget apt-transport-https nsis default-jre git-core build-essential python unzip curl --no-install-recommends && \
+    apt-get install -y ssh software-properties-common wget apt-transport-https nsis default-jre git-core build-essential python unzip curl --no-install-recommends && \
     wget https://dl.winehq.org/wine-builds/Release.key && \
     apt-key add Release.key && \
     apt-add-repository https://dl.winehq.org/wine-builds/ubuntu/ && \
